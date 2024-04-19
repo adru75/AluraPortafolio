@@ -33,10 +33,6 @@ a{
 }
 
 
-.title__profile {
-    width: 10em;
-    border-radius: 200px;
-}
 
 /*Sección Menu*/
 
@@ -44,7 +40,7 @@ a{
     display: flex;
     flex-direction:row;
     justify-content: space-between;
-    padding: 0.4em;
+    padding: 0.4rem;
     color: #F5F5F5;
     background-color: rgb(4, 98, 206);
     align-items:center; 
@@ -96,8 +92,13 @@ section.title{
     flex-wrap: nowrap;
     align-content: center;
     margin: 2em;
-
-    
+}
+.title__div {
+    margin: 0.5rem 6rem;;
+}
+.title__profile {
+    width: 10em;
+    border-radius: 200px;
 }
 .title__container {
     margin: 1em;
@@ -129,7 +130,7 @@ section.title{
 /*Sección About*/
 
 section.about{
-    padding: 2em 5em;
+    padding: 2rem 8rem;
     background-color: #EAF2FD;
 }
 
@@ -138,34 +139,45 @@ section.skills{
     text-align: center;
 
 }
-.skills__line{
+.skills__title, .academic__title, .hobbies__title , .experience__section__title, .formcontato__title{
+    font-size: 2em;
+    margin-top: 1em;
+}
+.skills__line, .hobbies__line{
     display: flex;
     flex-direction:row;
     justify-content: center;
     gap: 1rem;
 }
 
-.skills__box {
+.skills__box , .hobbies__box{
+    position: relative;
     background-color: #EAF2FD;
     border-radius: 1px;
+    width: 10em;
+    height: 10em;
+    padding: 0.2em;
 }
-.skills__box:hover {
+.skills__box:hover ,.hobbies__box:hover{
     background-color: #929292;
 }
-
-
+.skills__box ul, .hobbies__box ul{
+    position: absolute;
+    bottom: 1em;
+}
+.skills__img , .hobbies__img{
+    width: 1rem;
+}
+.skills__name, .hobbies__name {
+    font-weight: bold;
+    margin-top: 1em;
+}
 /*Sección Hobbies*/
 
 section.hobbies{
     text-align: center;
+    margin-bottom: 5em;
 
-}
-
-.hobbies__line {
-    display: flex;
-    flex-direction:row;
-    justify-content: center;
-    gap: 1rem;
 }
 
 /* Experiencia Académica*/
@@ -177,37 +189,79 @@ section.academic{
 }
 .academic__courses {
     display: flex;
-    flex-direction:row;
-    flex-wrap: nowrap;
-    justify-content: center;
-    gap: 1rem;
-
+    justify-content: space-between;
+    width: 100%;
+}
+.academic__courses__box {
+    width:33%;
+    text-align: left;
+}
+.academic__courses__item__img {
+    background-color: #F5F5F5;
+    padding: 1em;
+    width: 100%;
+    position: relative;
+}
+.academic__courses__item__img img{
+    width: 90%;
+    margin: auto;
+    display: block;
 }
 /* experiencia*/
 
 section.experience{
-    text-align: center;
+    width: 100%;
+}
 
+.experience__section__title {
+    text-align: center;
 }
 .experiencie__box {
     display: flex;
-    flex-direction:row;
-    flex-wrap: nowrap;
-    justify-content: center;
     gap: 1rem;
     padding: 3rem;    
-    align-items:center;
+    justify-content: center;
+    flex-direction:row;
 }
+.experiencie__box:nth-child(odd) { 
+    flex-direction: row-reverse;
+}
+
 .experience__description {
     display: flex;
     flex-direction:row;
     gap:10px;
 }
+.experience__img {
+    width:40%;
+}
+.experience__title {
+    font-weight:bolder;
+    font-size: 1.1em;
+}
+.experience__text {
+    font-size: 1em;
+    font-weight: normal;
+}
+
 .experiencia__botao--repo, .experience__botao--demo {
     border: 1px solid #2A7AE4;
     width: 116px;
     height: 51px;
-    padding: 16px;
+    padding: 0.8em;
+    background-color: #FFF;
+    cursor: pointer;
+    color:#2A7AE4;
+}
+.experience__botao--demo {
+    background-color: #2A7AE4;
+    border: 1px solid #FFF;
+    color: #FFF;
+
+}
+.experiencia__botao--repo:hover, .experience__botao--demo:hover {
+    color:#FFF;
+    background-color: var(--cor-de-link);
 }
 /*Contacto*/
 
@@ -233,6 +287,7 @@ Utiliza las referencias de los breakpoints @media abajo */
 /*Tablet*/
 @media (min-width: 768px) {
 
+
 /* Menú */
 .menu__list__item a{
     display:block;
@@ -253,25 +308,141 @@ Utiliza las referencias de los breakpoints @media abajo */
 
 }
 
-/*Mobile*/
-@media (min-width: 425px) {
 
-/*Menu*/
 
-/*Titulo*/
+@media (max-width: 768px) {
 
-/*Sección sobre mi*/
-
-/*Skills*/
-
-/*Hobbies*/
- 
-/*Formación Académica*/
-
-/*Experiencia Profesional*/
-
- /*Contacto*/
-
-/*Footer*/
-
+    .skills__title, .academic__title, .hobbies__title , .experience__section__title, .formcontato__title{
+        font-size: 1.6em;
+        margin-top: 0.9em;
+    }
+    /*Hobbies*/
+ .hobbies__line, .skills__line {
+    flex-direction: column;
+    gap: 1em;
+    flex-flow: row wrap;
+ }
+.hobbies__box , .skills__box{
+    width: 10em;
+    height: 10em;
 }
+
+/* Title */
+.title__container, .title {
+    margin: 0.5em;
+}
+.title__bio {
+    font-size:1.5em;
+}
+.title__subsection {
+    font-size: 0.8em;
+    font-weight: normal;
+}
+.title__div {
+    margin: 0.1rem 0.1rem;
+}
+.title__profile {
+    width: 5em;
+    border-radius: 200px;
+}
+
+.experiencie__box {
+    align-self: start;
+    flex-direction: column;
+    gap: 1rem;
+    padding: 1rem;    
+}
+.experiencie__box:nth-child(odd) {
+    flex-direction: column;
+}    
+.experience__title {
+    font-size: 0.8em;
+}
+.experience__text {
+    font-size: 0.8em;
+}
+.experience__botao--demo, .experiencia__botao--repo {
+    font-size: 0.8em;
+    width: 108px;
+    height: 40px;
+    padding: 0.5em;
+}
+.experience__img {
+    width: 90%;;
+}
+.experience__description {
+    flex-direction: flex-start;
+}
+}
+
+/*Mobile*/
+@media (max-width: 425px) {
+
+    .skills__title, .academic__title, .hobbies__title , .experience__section__title, .formcontato__title{
+        font-size: 1.2em;
+        margin-top: 0.6em;
+    }
+    /*Menu*/
+    /*Titulo*/
+    .title__container, .title {
+        margin: 0;
+    }
+    .title__bio {
+        font-size:1em;
+    }
+    .title__subsection {
+        font-size: 0.8em;
+        font-weight: normal;
+    }
+    .title__div {
+        margin: 0.1rem 0.1rem;
+        flex-direction: column;
+    }
+    .title__profile {
+        width: 5em;
+        border-radius: 200px;
+    }
+    .title__network {
+        justify-content: space-between;
+        align-content:center
+    }
+    .title__network__item {
+        font-size: 0.8em;
+    }
+    .title__network a {
+        display: inline;
+        flex-wrap: nowrap;
+   
+    }
+    .title__network__item img {
+        width: 0.6em;
+    }
+    /*Sección sobre mi*/
+    
+    section.about{
+        padding: 2em;
+    }        
+    /*Skills*/
+    
+    /*Hobbies*/
+    
+    .hobbies__box, .skills__box {
+        width: 8em;
+        height: 8em;
+    }
+    
+     /*Formación Académica*/
+    .academic__courses {
+        flex-direction: column;
+        gap: 2em;
+    }
+    .academic__courses__box {
+        width: 80%;
+    }
+    /*Experiencia Profesional*/
+    
+     /*Contacto*/
+    
+    /*Footer*/
+    
+    }
