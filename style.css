@@ -265,10 +265,66 @@ section.experience{
 }
 /*Contacto*/
 
-section.formcontato{
-
+.formcontato__contacto{
+    display: flex;
+    background-color: #EAF2FD;
+    padding: 5em;
+    gap: 1em;
 }
-
+.formcontato__img {
+    width: 100%;
+}
+.formcontato__text {
+    display: flex;
+    flex-direction: column;
+}
+.formcontato__title {
+    font-size: 1.5em;
+    margin-bottom: 1em;
+}
+.formcontato__subtext {
+    font-size: 1em;
+    font-weight: normal;
+}
+.formcontato__form {
+    display: flex;
+    flex-direction: column;
+    margin-top: 1em;
+    gap: 1em;
+}
+.formcontato__input {
+    border:none;
+    padding: 1em;
+    border-bottom: 2px solid #EAF2FD;
+}
+.formcontato__input:hover {
+    border:none;
+    border-bottom: 2px solid #2A7AE4;    
+}
+.formcontato__textarea {
+    border:none;
+    padding: 1em;
+    border-bottom: 2px solid #EAF2FD;
+    resize: none;
+}
+.formcontato__textarea:hover {
+    border:none;
+    border-bottom: 2px solid #2A7AE4;    
+}
+.formcontato__botao {
+    border: 1px solid #2A7AE4;
+    width: 116px;
+    height: 51px;
+    padding: 0.8em;
+    cursor: pointer;
+    background-color: #2A7AE4;
+    border: 1px solid #FFF;
+    color: #FFF;  
+}
+.formcontato__botao:hover {
+    color:#FFF;
+    background-color: var(--cor-de-link);
+}
 /*footeer*/
 
 section.footer{
@@ -373,7 +429,14 @@ Utiliza las referencias de los breakpoints @media abajo */
 .experience__description {
     flex-direction: flex-start;
 }
+.formcontato__img {
+    display:none;
 }
+.formcontato__contacto {
+    padding: 1.5em;
+}
+}
+
 
 /*Mobile*/
 @media (max-width: 425px) {
@@ -440,9 +503,16 @@ Utiliza las referencias de los breakpoints @media abajo */
         width: 80%;
     }
     /*Experiencia Profesional*/
-    
+    .experience__botao--demo, .experiencia__botao--repo {
+        font-size: 0.8em;
+        width: 96px;
+        height: 40px;
+        padding: 0.5em;
+    }
      /*Contacto*/
-    
+     .formcontato__contacto {
+        padding:0.1em;
+    }
     /*Footer*/
     
     }
