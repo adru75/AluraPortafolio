@@ -1,0 +1,88 @@
+.menu__header {
+    display: inline-block;
+    padding: 0.5em;
+    gap: 0.2em;
+}
+
+header img {
+    max-height: 20px;
+}
+
+/*Sección Menu*/
+
+.menu {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 0.4rem;
+    color: #F5F5F5;
+    background-color: rgb(4, 98, 206);
+    align-items: center;
+
+}
+
+section nav {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: flex-end;
+    align-items: baseline;
+    align-content: flex-end;
+    gap: 3rem;
+
+}
+
+.menu__list {
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+}
+
+.menu__header {
+    display: flex;
+    flex-direction: row;
+}
+
+.menu__list__item a {
+    display: none;
+    color: rgb(201, 219, 255);
+    white-space: nowrap;
+
+}
+
+.menu__list__item a:hover {
+    color: rgb(193, 251, 255);
+    font-weight: bold;
+}
+
+.menu__list__item__contato a {
+    color: rgb(81, 206, 255);
+}
+
+.menu__list__item__contato a:hover {
+    color: rgb(39, 39, 39);
+}
+
+/*Tablet*/
+@media (min-width: 768px) {
+
+
+    .menu__list__item a {
+        display: block;
+    }
+
+    .menu__list__item__contato a {
+        display: none;
+        font-weight: bold;
+    }
+
+
+}
+/*Mobile*/
+@media (max-width: 425px) {
+
+
+  
+
+
+}

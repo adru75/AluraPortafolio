@@ -1,0 +1,151 @@
+section.title{
+    display: flex;
+    flex-direction:row;
+    flex-wrap: nowrap;
+    align-content: center;
+    margin: 2em;
+}
+.title__div {
+    margin: 0.5rem 6rem;;
+}
+.title__profile {
+    width: 10em;
+    border-radius: 200px;
+}
+.title__container {
+    margin: 1em;
+    color: white;
+}
+.title__bio, .title__subsection {
+    margin: 1em;
+}
+.title__network {
+    display: flex;
+    flex-direction:row;
+    flex-wrap: nowrap;
+    gap:1rem;
+    height: 100%;
+}
+.title__network__item{
+    justify-content: flex-end;
+    margin-bottom: 3em;
+}
+.title__network__item a{
+    background-color: var(--cor-de-link);
+    padding: 4px;
+    border-radius: 5px;
+    color:rgb(99, 102, 104);
+}
+.title__network__item a:hover{
+    background-color: rgb(201, 201, 201);
+    padding: 4px;
+    border-radius: 4px;
+    color: white;
+}
+
+.title__div {
+    display: flex;
+    flex-direction:row;
+    flex-wrap: nowrap;
+}
+/*Sección About*/
+
+section.about{
+    padding: 2rem 8rem;
+    background-color: var(--cor-de-fondo_alt);
+}
+.about__title , .about__paragraph {
+    padding: 0.5em 0;
+}
+
+
+
+@media (max-width: 768px) {
+
+    /* Title */
+    .title__container,
+    .title {
+        margin: 0.5em;
+    }
+
+    .title__bio {
+        font-size: 1.5em;
+    }
+
+    .title__subsection {
+        font-size:1em;
+        font-weight: normal;
+    }
+
+    .title__div {
+        margin: 0.1rem 0.1rem;
+    }
+
+    .title__profile {
+        width: 8em;
+        height: 8em;
+        border-radius: 200px;
+    }
+    section.about{
+        padding: 2rem 3rem;
+        background-color: var(--cor-de-fondo_alt);
+    }
+ 
+}
+/*Mobile*/
+@media (max-width: 425px) {
+
+    section.title{
+        margin: 0;
+        padding: 1em;
+    }
+    section.about {
+        padding: 1rem 1rem;
+    }
+  
+     .title__container,
+    .title {
+        margin: 0;
+    }
+
+    .title__bio {
+        font-size: 1em;
+    }
+
+    .title__subsection {
+        font-size: 0.9em;
+        font-weight: normal;
+    }
+
+    .title__div {
+        margin: 0.1rem 0.1rem;
+        flex-direction: column;
+        width: 90%;
+    }
+
+    .title__profile {
+        border-radius: 200px;
+    }
+
+    .title__network {
+        justify-content: space-between;
+        align-content: center
+    }
+
+    .title__network__item {
+        font-size: 0.8em;
+    }
+
+    .title__network a {
+        display: inline;
+        flex-wrap: nowrap;
+        font-size: 1em;
+
+    }
+
+    .title__network__item img {
+        width: 0.6em;
+    }
+
+  
+}

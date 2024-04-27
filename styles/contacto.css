@@ -1,0 +1,125 @@
+/*Contacto*/
+section.formcontato {
+    width: 100%;
+ }
+.formcontato__contacto{
+    display: flex;
+    background-color: var(--cor-de-fondo_alt);
+    padding: 0em 2em 0em 2em;
+    gap: 1em;
+}
+.formcontato__img {
+    width: 100%;
+    border-radius: 40px;
+}
+.formcontato__text {
+    display: flex;
+    flex-direction: column;
+}
+.formcontato__title {
+    font-size: 1.5em;
+    margin-bottom: 1em;
+}
+.formcontato__subtext {
+    font-size: 1em;
+    font-weight: normal;
+    padding-bottom: 1em;
+}
+.formcontato__form {
+    display: flex;
+    flex-direction: column;
+    margin-top: 1em;
+    gap: 1em;
+}
+.formcontato__input {
+    border:none;
+    padding: 1em;
+    border-bottom: 2px solid #EAF2FD;
+    border-radius: 10px;
+    display: block;
+    width: 100%;
+    margin-top: .5em;
+}
+.formcontato__input:hover {
+    border:none;
+    border-bottom: 2px solid #2A7AE4;    
+}
+.formcontato__textarea {
+    display: block;
+    width: 100%;
+    border:none;
+    padding: 1em;
+    border-bottom: 2px solid #EAF2FD;
+    resize: none;
+    border-radius: 10px;
+
+}
+.campo__etiqueta {
+    font-weight: 500;
+    line-height: 20px;
+}
+.formulario__campo {
+    margin-bottom: 1em;
+}
+.formcontato__textarea:hover {
+    border:none;
+    border-bottom: 2px solid #2A7AE4;    
+}
+.formcontato__botao {
+    border: 1px solid #2A7AE4;
+    width: 116px;
+    height: 51px;
+    padding: 0.8em;
+    cursor: pointer;
+    background-color: #2A7AE4;
+    border: 1px solid #FFF;
+    color: #FFF;  
+}
+.formcontato__botao:hover {
+    color:#FFF;
+    background-color: var(--cor-de-link);
+}
+.mensaje-error {
+    display: block;
+    margin-top: 5px;
+    font-weight: bolder;
+    font-size: .9em;
+    color: red;
+}
+/* @media queris abajo */
+
+@media (max-width: 768px) {
+
+
+    .formcontato__title {
+        font-size: 1.6em;
+        margin-top: 0.9em;
+    }
+
+    
+    .formcontato__img {
+        display: none;
+    }
+
+    .formcontato__contacto {
+        padding: 1.5em;
+    }
+}
+
+
+/*Mobile*/
+@media (max-width: 425px) {
+
+    .formcontato__title {
+        font-size: 1.2em;
+        margin-top: 0.6em;
+    }
+
+    .formcontato__contacto {
+        padding: 0.1em;
+    }
+    section.formcontato {
+        padding: 0 1em 1em 1em;
+    }
+
+}

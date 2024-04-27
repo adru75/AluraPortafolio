@@ -1,0 +1,24 @@
+section.footer{
+    width: 100%;
+    background-color:black;
+    color:white;
+}
+.footer__rodape {
+    text-align: center;
+    padding: 5px;
+}
+
+
+
+/*Mobile*/
+@media (max-width: 425px) {
+
+    
+    section.footer{
+       width: 100%;
+    }
+
+  
+
+
+}
