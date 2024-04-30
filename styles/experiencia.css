@@ -113,7 +113,10 @@ section.experience{
 /*Mobile*/
 @media (max-width: 425px) {
 
-    .experience__section__title {
+    section.experience{
+        padding: 0 .5em;
+    }
+    h2.experience__section__title {
         font-size: 1.2em;
         margin-top: 0.6em;
     }

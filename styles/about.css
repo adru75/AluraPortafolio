@@ -4,6 +4,7 @@ section.title{
     flex-wrap: nowrap;
     align-content: center;
     margin: 2em;
+    width: 100%;
 }
 .title__div {
     margin: 0.5rem 6rem;;
@@ -63,6 +64,8 @@ section.about{
 @media (max-width: 768px) {
 
     /* Title */
+    section.title {
+    }
     .title__container,
     .title {
         margin: 0.5em;
@@ -100,11 +103,11 @@ section.about{
         padding: 1em;
     }
     section.about {
+        margin: 0;
         padding: 1rem 1rem;
     }
   
-     .title__container,
-    .title {
+     .title__container,    .title {
         margin: 0;
     }
 
@@ -129,9 +132,13 @@ section.about{
 
     .title__network {
         justify-content: space-between;
-        align-content: center
-    }
+        align-content: center;
+        gap:0.2rem;
+        max-height: 100px;
+        margin-top: 2em;
+        flex-wrap:wrap; 
 
+    }
     .title__network__item {
         font-size: 0.8em;
     }

@@ -1,6 +1,4 @@
 :root {
-    /* Inserta la variable de los otros colores inspeccionando el exemplo de figma */
-    /*Se esforce para trabalhar com variáveis, é uma dica profissional valiosa*/
     --cor-de-fondo: #58ace7;
     --cor-de-fondo_alt: #d4edff;
     --cor-de-link: #98e2ff;
@@ -16,6 +14,9 @@ body {
     width: 100%;
 }
 
+.todo {
+    width: 100%;
+}
 section {
     width:100%;
 }

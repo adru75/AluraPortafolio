@@ -29,6 +29,8 @@ section nav {
     align-items: baseline;
     align-content: flex-end;
     gap: 3rem;
+    padding-right: 1em;
+
 
 }
 
@@ -78,11 +80,22 @@ section nav {
 
 
 }
+
+@media (max-width: 768px) {
+    section.menu {
+        padding: 0.2em;
+    }
+
+}
 /*Mobile*/
 @media (max-width: 425px) {
 
-
-  
-
+    .menu__list {
+        width: 0px;
+    }
+  section nav {
+    gap:0.1em;
+    width:100%;
+  }
 
 }

@@ -63,15 +63,7 @@ section.hobbies{
     .experience__description {
         flex-direction: flex-start;
     }
-
-    .formcontato__img {
-        display: none;
-    }
-
-    .formcontato__contacto {
-        padding: 1.5em;
-    }
-}
+ }
 
 
 /*Mobile*/
